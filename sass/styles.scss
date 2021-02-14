@@ -1,0 +1,39 @@
+body {
+    background-color: #000;
+    // overflow: hidden;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    perspective: 300px;
+    #star-wars-logo {
+        margin: 5em;
+        transform: scale(.1);
+    }
+    #intro-resume {
+        color: #FFC500;       
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        // max-width: 400px;
+        max-width: 600px;
+        // font-size: 20px;
+        font-size: 200%;
+        text-align: justify;
+        transform: rotateX(35deg) translateY(700px);
+        // animation: star-wars-intro 60s linear;
+        #movie-title {
+            text-align: center;
+        }
+    }
+}
+
+@keyframes star-wars-intro {
+    0% {
+        transform: rotateX(35deg) translateY(700px);
+    }
+    100% { 
+        transform: rotateX(35deg) translateY(-1000px);
+    }
+}

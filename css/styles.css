@@ -1,0 +1,38 @@
+body {
+  background-color: #000;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  perspective: 300px;
+}
+main #star-wars-logo {
+  margin: 5em;
+  transform: scale(0.1);
+}
+main #intro-resume {
+  color: #FFC500;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 600px;
+  font-size: 200%;
+  text-align: justify;
+  transform: rotateX(35deg) translateY(700px);
+}
+main #intro-resume #movie-title {
+  text-align: center;
+}
+
+@keyframes star-wars-intro {
+  0% {
+    transform: rotateX(35deg) translateY(700px);
+  }
+  100% {
+    transform: rotateX(35deg) translateY(-1000px);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
